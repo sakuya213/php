@@ -4,26 +4,34 @@
 
 class PersonTest extends PHPUnit_Framework_TestCase {
 
-    public $test;
+    private $objects = array();
 
 
 
-    public fuction setUp() {
+    public function construct() {
 
-        $this->test = new Person("Tony","Romanov");
-
+        $this->objects[0] = new name();
+        $this->objects[1] = new surname();
     }
 
-    public fuction testName() {
-
-        $Tony = $this->test->getName();
-        $this->assertTrue($Tony == "Tony");
+    public function getName() {
+        $this->objects[0]->method();
+    }
+     
+    public function getSurname() {
+        $this->objects[1]->method();
     }
 
-    public fuction testSurname() {
+    public function testgetName() {
 
-        $Romanov = $this->test->getSurname();
-        $this->assertTrue($Romanov == "Romanov");
+        $Jarek = $this->test->getName();
+        $this->assertTrue($Jarek == "Jarek");
+    }
+
+    public function testgetSurname() {
+
+        $Kotlorz = $this->test->getSurname();
+        $this->assertTrue($Kotlorz == "Kotlorz");
     }
 
 }

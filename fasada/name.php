@@ -2,17 +2,9 @@
 
 class Name {
 
-	public $name;
+	public function getName(){
 
-	public function constructName($name){
-
-		$this->name = $name;
-
-	}
-
-	public function getName() {
-
-		return $this->name;
+		printf(Jarek);
 
 	}
 

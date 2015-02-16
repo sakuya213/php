@@ -2,17 +2,10 @@
 
 class Surname {
 
-	public $surname;
 
-	public function constructSurname($surname){
+	public function getSurname(){
 
-		$this->surname = $surname;
-
-	}
-
-	public function getSurname() {
-
-		return $this->surname;
+		printf(Kotlorz);
 
 	}
 

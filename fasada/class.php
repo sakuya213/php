@@ -1,36 +1,39 @@
 <?php 
  
- require_once 'name.php','surname.php';
+ require_once('./name.php');
+ require_once('./surname.php');
 
 class PersonTest extends PHPUnit_Framework_TestCase {
 
-    private $objects = array();
+    private 
+	$imie;
+    private
+	$nazwisko;
 
 
+    public function __construct() {
 
-    public function construct() {
-
-        $this->objects[0] = new name();
-        $this->objects[1] = new surname();
+        $this->imie = new Name();
+        $this->nazwisko = new Surname();
     }
 
     public function getName() {
-        $this->objects[0]->method();
+        return $this->imie->getName();
     }
      
     public function getSurname() {
-        $this->objects[1]->method();
+        return $this->nazwisko->getSurname();
     }
 
     public function testgetName() {
 
-        $Jarek = $this->test->getName();
+        $Jarek = $this->getName();
         $this->assertTrue($Jarek == "Jarek");
     }
 
     public function testgetSurname() {
 
-        $Kotlorz = $this->test->getSurname();
+        $Kotlorz = $this->getSurname();
         $this->assertTrue($Kotlorz == "Kotlorz");
     }
 

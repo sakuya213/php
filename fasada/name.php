@@ -4,7 +4,7 @@ class Name {
 
 	public function getName(){
 
-		printf(Jarek);
+		return "Jarek";
 
 	}
 

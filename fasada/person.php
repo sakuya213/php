@@ -10,10 +10,10 @@ class Person
     private 
         $surname;
 
-    public function __construct($name) {
+    public function __construct($name,$surname) {
 
         $this->name = new Name($name);
-        $this->surname = new Surname();
+        $this->surname = new Surname($surname);
     }   
 
     public function getName() {

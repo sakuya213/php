@@ -1,14 +1,21 @@
 <?php
 
-class Surname {
+class Surname 
+{
+	private $surname;
 
+	public function getSurname() {
 
-	public function getSurname(){
-
-		return "Kotlorz";
-
+		return $this->surname;
 	}
 
-}
+	public function setSurname() {
 
-?>
+		$this->surname = $surname;
+	}
+
+	public function __construct($surname) {
+
+		$this->setSurname($surname);
+	}
+}

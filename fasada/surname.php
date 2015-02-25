@@ -7,9 +7,10 @@ class Surname
 	public function getSurname() {
 
 		return $this->surname;
+
 	}
 
-	public function setSurname() {
+	public function setSurname($surname) {
 
 		$this->surname = $surname;
 	}

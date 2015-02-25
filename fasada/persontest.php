@@ -1,28 +1,32 @@
 <?php    
-require_once('./class.php');
+include 'class.php';
 
 
 class PersonTest extends PHPUnit_Framework_TestCase 
 { 
-	private $name;
-	private $surname;
+	private $person;
 
 	public function __construct()
 	{
-	$this->name = new Person('Stefan');
-	$this->surname = new Person('Batory')
+	$this->person = new Person('Stefan','Albert','Batory');
 	}
 
     public function testGetName() {
 
-        $Jarek = $this->name->getName();
+        $Jarek = $this->person->getName();
         $this->assertEquals("Stefan",$Jarek);
+    }
+
+    public function testGetSecondName() {
+
+        $Mirek = $this->person->getSecondName();
+        $this->assertEquals("Albert",$Mirek);
     }
 
     public function testGetSurname() {
 
-    	$Kotlorz = $this->surname->getSurname();
-    	$this->assertEquals("Batory",$Kotlorz)
+    	$Kotlorz = $this->person->getSurname();
+    	$this->assertEquals("Batory",$Kotlorz);
     }
 
   

@@ -1,5 +1,5 @@
 <?php    
-require_once('./class.php');
+include 'class.php';
 
 
 class PersonTest extends PHPUnit_Framework_TestCase 
@@ -8,7 +8,9 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
 	public function __construct()
 	{
-	$this->person = new Person('Stefan','Batory');
+
+	$this->person = new Person('Stefan','Albert','Batory');
+
 	}
 
     public function testGetName() {
@@ -17,10 +19,18 @@ class PersonTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("Stefan",$Jarek);
     }
 
+    public function testGetSecondName() {
+
+        $Mirek = $this->person->getSecondName();
+        $this->assertEquals("Albert",$Mirek);
+    }
+
     public function testGetSurname() {
 
     	$Kotlorz = $this->person->getSurname();
-    	$this->assertEquals("Batory",$Kotlorz)
+
+    	$this->assertEquals("Batory",$Kotlorz);
+
     }
 
   

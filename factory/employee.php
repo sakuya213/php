@@ -4,8 +4,8 @@ include 'surname.php';
 
 interface AbstractEmployee {
 
-	function createEmployee();
-}
+	function getName();
+	function getSurname();
 
 class Employee implements AbstractEmployee {
 

@@ -9,7 +9,7 @@ class FactoryTest extends PHPUnit_Framework_TestCase
 
 	public function __construct() {
 
-	$this->employee = new Employee('Stefan','Batory');
+	$this->employee = new PoliceMan('Stefan','Batory');
 	
     }
 

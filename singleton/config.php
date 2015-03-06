@@ -6,9 +6,9 @@ class Config
     private static $instance;
 
     private $config = array(
-        "name"     =>  "myname",
-        "surname"  =>  "mysurname",
-        "old"  =>  "myold"
+        "name"     =>  "Jarek",
+        "surname"  =>  "Kotlorz",
+        "old"  =>  "21"
         );
  
     private function __construct() {}
@@ -20,9 +20,11 @@ class Config
         }
         return self::$instance;
     }
+
     public function setName($name) {
         $this->config["name"] = $name;
     }
+
     public function getName() {
         return $this->config["name"];
     }

@@ -13,23 +13,25 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
 	}
 
-    public function testGetName() {
+    public function testGetName() 
+    {
 
         $Jarek = $this->person->getName();
         $this->assertEquals("Stefan",$Jarek);
     }
 
-    public function testGetSecondName() {
+    public function testGetSecondName() 
+    {
 
         $Mirek = $this->person->getSecondName();
         $this->assertEquals("Albert",$Mirek);
     }
 
-    public function testGetSurname() {
+    public function testGetSurname() 
+    {
 
     	$Kotlorz = $this->person->getSurname();
-
-    	$this->assertEquals("Batory",$Kotlorz);
+        $this->assertEquals("Batory",$Kotlorz);
 
     }
 

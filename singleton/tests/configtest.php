@@ -7,26 +7,26 @@ class ConfigTest extends PHPUnit_Framework_TestCase
 private $config;
 
 
-public function testGetInstance() 
-{
-
-	$config = Config::getInstance();
-
-
-	public function testSetName($name) 
+	public function testGetInstance() 
 	{
 
-		$this->Config["Jarek"] = $name
+		$config = Config::getInstance();
 
-	}
 
-	public function testGetName() 
-	{
+		public function testSetName($name) 
+		{
 
-		$Jarek = $this->$name->getName();
-        $this->assertEquals("Jarek",$Jarek);
+			$this->Config["Jarek"] = $name
 
-	}
+		}
+
+		public function testGetName() 
+		{
+
+			$Jarek = $this->$name->getName();
+       		$this->assertEquals("Jarek",$Jarek);
+
+		}
 
 }
 }

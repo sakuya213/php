@@ -2,7 +2,8 @@
 
 class PoliceMan implements AbstractFactory {
 
-	public function createEmployee() {
+	public function createEmployee() 
+	{
 
 		return new Employee($name,$surname);
 	}
